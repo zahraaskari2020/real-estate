@@ -1,5 +1,6 @@
-import React from 'react'
-import Navbar from '../../components/navbar'
+import './Layout.scss'
+import Navbar from '../../components/navbar/Navbar'
+import { Outlet } from 'react-router-dom'
 
 export default function Layout() {
   return (
@@ -8,7 +9,7 @@ export default function Layout() {
         <Navbar />
       </div>
       <div className="content">
-        <HomePage></HomePage>
+        <Outlet />
       </div>
     </div>
   )
