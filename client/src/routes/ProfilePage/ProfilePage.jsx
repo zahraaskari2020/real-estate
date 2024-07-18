@@ -37,10 +37,10 @@ export default function ProfilePage() {
           </div>
           <div className="info">
             <span>Avatar: 
-              <img  src={currentUser.userInfo.avatar || './noavatar.jpg'} alt=""/>
+              <img  src={currentUser.avatar || './noavatar.jpg'} alt=""/>
             </span>
-            <span>Username: <b>{currentUser.userInfo.username}</b></span>
-            <span>Email: <b>{currentUser.userInfo.email}</b></span>
+            <span>Username: <b>{currentUser.username}</b></span>
+            <span>Email: <b>{currentUser.email}</b></span>
             <button onClick={handleLogout}>Logout</button>
           </div>
           <div className="title">

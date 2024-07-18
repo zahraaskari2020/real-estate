@@ -50,7 +50,7 @@ export const login = async (req,res) =>{
             httpOnly:true,
             // secure:true,
             maxAge: age
-        }).status(200).json({userInfo})
+        }).status(200).json(userInfo)
 
     } catch(err){
         console.log(err);

@@ -24,8 +24,8 @@ export default function Navbar() {
         <div className='right'>
           {currentUser ? (
           <div className="user">
-            <img  src= {currentUser.userInfo.avatar || './noavatar.jpg'} alt=""/>
-            <span>{currentUser.userInfo.username}</span>
+            <img  src= {currentUser.avatar || './noavatar.jpg'} alt=""/>
+            <span>{currentUser.username}</span>
             <Link to='/profile' className="profile">
             <div className="notification">3</div>
             <span>Profile</span>
