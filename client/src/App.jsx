@@ -8,7 +8,7 @@ import Login from "./routes/Login/Login";
 import Register from "./routes/register/register";
 import ProfileUpdatePage from './routes/profileUpdatePage/profileUpdatePage';
 import NewPostPage from './routes/newPostPage/newPostPage';
-import { singlePageLoader, listPageLoader } from "./lib/loaders";
+import { singlePageLoader, listPageLoader, profilePageLoader } from "./lib/loaders";
 
 function App() {
 
@@ -47,6 +47,7 @@ function App() {
         {
           path: "/profile",
           element: <ProfilePage/>, 
+          loader: profilePageLoader
         },
         {
           path: "/profile/update",
